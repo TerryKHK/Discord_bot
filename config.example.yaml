@@ -1,0 +1,49 @@
+token: '' # Your Bot's token from https://discordapp.com/developers/applications/me
+
+manhole_enable: true
+manhole_bind: 127.0.0.1:7171
+
+DSN: 'http://<private>:<public>@<domain>/<number>'
+state:
+  sync_guild_members: true
+
+bot:
+  commands_enabled: true
+  plugins:
+    - rowboat.plugins.core
+    - rowboat.plugins.modlog
+    - rowboat.plugins.admin
+    - rowboat.plugins.infractions
+    - rowboat.plugins.spam
+    - rowboat.plugins.censor
+    - rowboat.plugins.reddit
+    - rowboat.plugins.starboard
+    - rowboat.plugins.utilities
+    - rowboat.plugins.sql
+    - rowboat.plugins.internal
+    - rowboat.plugins.stats
+
+constants:
+  # IDs and such
+  ROWBOAT_GUILD_ID: 290923757399310337
+  ROWBOAT_USER_ROLE_ID: 339256926921555968
+  ROWBOAT_CONTROL_CHANNEL: 290924692057882635
+  # Emoji IDs
+  GREEN_TICK_EMOJI_ID: 305231298799206401
+  RED_TICK_EMOJI_ID: 305231335512080385
+  ONLINE_EMOJI_ID: 305889169811439617
+  IDLE_EMOJI_ID: 305889079222992896
+  DND_EMOJI_ID: 305889053255925760
+  OFFLINE_EMOJI_ID: 305889028996071425
+  STREAMING_EMOJI_ID: 305889126463569920
+
+web:
+  DOMAIN: 'https://<domain>' # Domain for your instance. Leave out the trailing slash.
+  discord:
+  SECRET_KEY: '' # A strong generated secret key
+  DISCORD_API_BASE_URL: 'https://discordapp.com/api' # Discord API Base URL
+  DISCORD_AUTH_URL: 'https://discordapp.com/oauth2/authorize' # OAuth Authorization URL
+  DISCORD_CLIENT_ID: '' # Your Bot's Client ID from https://discordapp.com/developers/applications/me
+  DISCORD_CLIENT_SECRET: '' # Your Bot's Client Secret from https://discordapp.com/developers/applications/me
+  DISCORD_REDIRECT_URI: 'https://<domain>/auth/discord/callback' # Your app's callback URL for auth. This is 'http://yourdomain/auth/discord/callback'
+  DISCORD_TOKEN_URL: 'https://discordapp.com/api/oauth2/token'

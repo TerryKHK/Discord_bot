@@ -1,0 +1,9 @@
+rowboat-*.json
+config.yaml
+config.yml
+*.pyc
+.venv/
+*.log
+.data
+.ftpconfig
+restart.sh
